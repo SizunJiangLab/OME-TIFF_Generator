@@ -7,6 +7,9 @@ import tifffile
 # Parse command line arguments
 #####################################
 
+# Need to improve how the script parse options. Probably write a dedicated function for this
+# and save seperately so we can recycle it and use it in future scripts
+
 # Parse options. If opts is empty, it is equivalent to FALSE.  
 
 opts = [opt for opt in sys.argv[1:] if opt.startswith('-')]
