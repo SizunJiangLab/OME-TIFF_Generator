@@ -7,9 +7,11 @@ import tifffile
 # Parse command line arguments
 #####################################
 
+# Parse options. If opts is empty, it is equivalent to FALSE.  
+
 opts = [opt for opt in sys.argv[1:] if opt.startswith('-')]
 
-if "-o" in opts:
+if opts:
     ALTERNATIVE_OUTPUT = True
 else:
     ALTERNATIVE_OUTPUT = False
