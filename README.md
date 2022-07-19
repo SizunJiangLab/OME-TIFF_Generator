@@ -10,8 +10,8 @@ python generate_ome_tiff.py <PATH> <Pixel width> <Pixel height> -o<Output>
 
 For each argument, 
 - `<PATH>` should be the path to the directory with the tiff files you want to combine.
-- `<Pixel width>` should be the pixel width of your imaging instrument in **μm**.
-- `<Pixel height>` should be the pixel height of your imaging instrument in **μm**.
+- `<Pixel width>` should be the pixel width resolution from your imaging instrument in **μm**.
+- `<Pixel height>` should be the pixel height resolution from your imaging instrument in **μm**.
 - `-o<Output name>` is an optional option that tells the program to name the output file after `<Output>`. If omitted, the output will be named after the directory and the OME-TIFF will be generated in the current working directory.
 
 ## Example
