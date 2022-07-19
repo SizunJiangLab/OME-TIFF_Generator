@@ -40,7 +40,9 @@ Then, voila, the pyramidal OME-TIFF is created. This OME-TIFF will be directly c
 
 ![output](README_img/output.png)
 
-                                                                                                                                    Huaying Qiu
+
+
+Huaying Qiu
 
 
 
