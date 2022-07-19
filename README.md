@@ -29,6 +29,7 @@ The pixel size of is 0.38μm x 0.38μm. And I want to name the output file as `e
 
 Then, voila, the pyramidal OME-TIFF is created.
 
+![Example image](example_img.png)
 
 
 
