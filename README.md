@@ -49,7 +49,7 @@ Then, voila, the pyramidal OME-TIFF is created. This OME-TIFF will be directly c
 
 
 
-Huaying Qiu
+Developed and implemented by: Huaying Qiu. Aka blame him if you have problems :) 
 
 
 
