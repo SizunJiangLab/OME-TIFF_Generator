@@ -36,12 +36,9 @@ The pixel size of is 0.38μm x 0.38μm. And I want to name the output file as `e
 
 `python generate_ome_tiff.py data 0.38 0.38 -oimg/example`
 
-Then, voila, the pyramidal OME-TIFF is created.
+Then, voila, the pyramidal OME-TIFF is created. This OME-TIFF will be directly compatible with most readers, including the open-source Qupath.
 
 ![output](README_img/output.png)
-
-
-Huaying Qiu
 
 
 
