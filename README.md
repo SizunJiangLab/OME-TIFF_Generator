@@ -5,6 +5,9 @@ This script is created to combine multiple tiff images into a pyramidal OME-TIFF
 - `Python 3.9.6`
 - `numpy 1.23.1`
 - `tifffile 2022.5.4`
+### Install `tifffile`
+Use
+`pip install tifffile` or `conda install tifffile`, if you are using conda to manage your libraries.
 ## Basic Usage
 Requires library [`tifffile`](https://github.com/cgohlke/tifffile). This script should be run as follows:
 
