@@ -41,6 +41,9 @@ Then, voila, the pyramidal OME-TIFF is created.
 ![output](README_img/output.png)
 
 
+Huaying Qiu
+
+
 
 
 
