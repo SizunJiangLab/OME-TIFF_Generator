@@ -39,7 +39,7 @@ and
 
 ![data](README_img/data.png)
 
-The pixel size of is 0.38μm x 0.38μm. And I want to name the output file as `example.ome.tiff` and output into `Users/huayingqiu/JiangLab/img`. To do all these, I would run the following
+The pixel size of the instrument is 0.38μm x 0.38μm. And I want to name the output file as `example.ome.tiff` and output into `Users/huayingqiu/JiangLab/img`. To do all these, I would run the following
 
 `python generate_ome_tiff.py data 0.38 0.38 -oimg/example`
 
