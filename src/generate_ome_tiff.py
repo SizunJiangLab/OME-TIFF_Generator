@@ -77,9 +77,10 @@ for img in img_names:
 # Stack arrays
 imgStack = np.stack(imgList)
 
-if BIT_DEPTH == 16:
+if BIT_DEPTH == '16':
     imgStack = imgStack.astype('uint16')
-elif BIT_DEPTH == 8:
+elif BIT_DEPTH == '8':
+    imgStack[1:,...] = (imgStack[1:,...]/256)
     imgStack = imgStack.astype('uint8')
 
 #########################################################
