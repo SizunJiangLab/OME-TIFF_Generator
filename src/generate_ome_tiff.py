@@ -23,12 +23,14 @@ try:
     PATH = sys.argv[1]
     RESOLUTION_X = sys.argv[2]
     RESOLUTION_Y = sys.argv[3]
+    BIT_DEPTH = sys.argv[4]
 except IndexError:
     raise SystemExit(f"Please input the following arguments.\
         \n Usage: {sys.argv[0]} <Path> <Resolution_X> <Resolution_Y> -o<Output name>\
         \n <PATH> : Path to the directory with TIFF files you want to combine. \
         \n <Resolution_X> : Pixel width in μm. \
         \n <Resolution_Y> : Pixel height in μm. \
+        \n <BIT_DEPTH>: 8 bit or 16 bit. \
         \n -o : Specifies an alternative output name. If omitted, the output will be named after the directory.")
     
 
@@ -40,6 +42,9 @@ except IndexError:
 RESOLUTION_X = sys.argv[2]
 # pixel height in μm
 RESOLUTION_Y = sys.argv[3]
+
+# bit depth
+BIT_DEPTH = sys.argv[4]
 
 # Set img directory
 
@@ -72,7 +77,10 @@ for img in img_names:
 # Stack arrays
 imgStack = np.stack(imgList)
 
-imgStack = imgStack.astype('uint16')
+if BIT_DEPTH == 16:
+    imgStack = imgStack.astype('uint16')
+elif BIT_DEPTH == 8:
+    imgStack = imgStack.astype('uint8')
 
 #########################################################
 # Write pyramidal OME-TIFF
