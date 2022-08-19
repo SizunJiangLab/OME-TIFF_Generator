@@ -1,6 +1,6 @@
 ![Example image](README_img/example_img.png)
 # OME-TIFF Generator
-This script is created to combine multiple tiff images into a pyramidal OME-TIFF. The current version is working, but some improvements and more features will be added later.
+This script is created to combine multiple **16 bit tiff** images into a 16 bit or 8 bit pyramidal OME-TIFF. The current version is working, but some improvements and more features will be added later.
 ## Python and Library Version
 - `Python 3.9.6`
 - `numpy 1.23.1`
