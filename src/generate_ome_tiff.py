@@ -26,7 +26,7 @@ try:
     BIT_DEPTH = sys.argv[4]
 except IndexError:
     raise SystemExit(f"Please input the following arguments.\
-        \n Usage: {sys.argv[0]} <Path> <Resolution_X> <Resolution_Y> -o<Output name>\
+        \n Usage: {sys.argv[0]} <Path> <Resolution_X> <Resolution_Y> <BIT_DEPTH> -o<Output name>\
         \n <PATH> : Path to the directory with TIFF files you want to combine. \
         \n <Resolution_X> : Pixel width in μm. \
         \n <Resolution_Y> : Pixel height in μm. \
